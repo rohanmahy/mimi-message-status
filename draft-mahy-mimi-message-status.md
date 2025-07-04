@@ -3,7 +3,7 @@ title: "A Message Status format for the More Instant Messaging Interoperability 
 abbrev: "MIMI Message Status"
 category: info
 
-docname: draft-mimi-message-status-latest
+docname: draft-mahy-mimi-message-status-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
