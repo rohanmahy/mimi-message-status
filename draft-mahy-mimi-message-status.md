@@ -141,23 +141,23 @@ A CBOR pretty printed hexadecimal version is shown below:
 84                                      # array(4)
    82                                   # array(2)
       58 20                             # bytes(32)
-         d3c14744d1791d02548232c23d35efa9
-         7668174ba385af066011e43bd7e51501
+         017ce54837404c3696e0c747b985cb17
+         2716d0ed0a3d249ca63ace7d82a096f4
       02                                # unsigned(2)
    82                                   # array(2)
       58 20                             # bytes(32)
-         e701beee59f9376282f39092e1041b2a
-         c2e3aad1776570c1a28de244979c71ed
+         015354973c2b65ca937bf1e035ae53a5
+         ab80e947afa43d46920d4202e5cc0b27
       02                                # unsigned(2)
    82                                   # array(2)
       58 20                             # bytes(32)
-         6b50bfdd71edc83554ae21380080f4a3
-         ba77985da34528a515fac3c38e4998b8
+         018d825adf9f6be00dcafc5704c4102f
+         5022e74219d0b603e4ba7622654042af
       00                                # unsigned(0)
    82                                   # array(2)
       58 20                             # bytes(32)
-         5c95a4dfddab84348bcc265a479299fb
-         d3a2eecfa3d490985da5113e5480c7f1
+         01e59db8173939facc2c8a4a0f0ae8d0
+         c7a11a81239626630c9464a8d6717a03
       03                                # unsigned(3)
 ~~~
 
@@ -208,10 +208,10 @@ Encoding considerations:
    This message type should be encoded as binary data
 
 Security considerations:
-   See Section A of RFC XXXX
+   See Section 6 of RFC XXXX
 
 Interoperability considerations:
-   See Section Y.Z of RFC XXXX
+   See Section 3 of RFC XXXX
 
 Published specification: RFC XXXX
 
