@@ -11,26 +11,25 @@
 a message format for instant messaging. This specification defines a concise,
 efficient format for communicating status of messages sent using MIMI content. 
     " name="description">
-<meta content="xml2rfc 3.29.0" name="generator">
+<meta content="xml2rfc 3.31.0" name="generator">
 <meta content="mimi content" name="keyword">
 <meta content="status" name="keyword">
 <meta content="read receipts" name="keyword">
 <meta content="message delivery" name="keyword">
 <meta content="draft-mahy-mimi-message-status-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.29.0
-    Python 3.12.11
+  xml2rfc 3.31.0
+    Python 3.12.12
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.6
     lxml 5.3.1
-    platformdirs 4.3.8
+    platformdirs 4.5.0
     pycountry 24.6.1
     PyYAML 6.0.2
-    requests 2.32.4
-    setuptools 80.9.0
-    wcwidth 0.2.13
+    requests 2.32.5
+    wcwidth 0.2.14
 -->
 <link href="draft-mahy-mimi-message-status.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1049,11 +1048,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">MIMI Message Status</td>
-<td class="right">July 2025</td>
+<td class="right">November 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Mahy</td>
-<td class="center">Expires 5 January 2026</td>
+<td class="center">Expires 10 May 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1066,12 +1065,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-mahy-mimi-message-status-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-07-04" class="published">4 July 2025</time>
+<time datetime="2025-11-06" class="published">6 November 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-01-05">5 January 2026</time></dd>
+<dd class="expires"><time datetime="2026-05-10">10 May 2026</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1122,7 +1121,7 @@ efficient format for communicating status of messages sent using MIMI content.<a
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 5 January 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 10 May 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1345,26 +1344,26 @@ MessageId = bstr .size 32
 [
   [
     /  Original message     /
-    h'01b0084467273cc43d6f0ebeac13eb84
-      229c4fffe8f6c3594c905f47779e5a79',
+    h'017ce54837404c3696e0c747b985cb17
+      2716d0ed0a3d249ca63ace7d82a096f4',
     2    / status = read    /
   ],
   [
     /  Reply message        /
-    h'01a419aef4e16d43cfc06c28235ecfbe
-      9faebc740d0148e7ca20b22150930836',
+    h'015354973c2b65ca937bf1e035ae53a5
+      ab80e947afa43d46920d4202e5cc0b27',
     2    / status = read    /
   ],
   [
     /  Mention message      /
-    h'01cbc26869928fd13edf55ace00f9976
-      8ca4e62ad17fede45520eaca58f69d02',
+    h'018d825adf9f6be00dcafc5704c4102f
+      5022e74219d0b603e4ba7622654042af',
     0    / status = unread  /
   ],
   [
     /  Expiring message     /
-    h'0106308e2c03346eba95b24abdfa9fe6
-      43aa247debfb7192feae647155316920',
+    h'01e59db8173939facc2c8a4a0f0ae8d0
+      c7a11a81239626630c9464a8d6717a03',
     3    / status = expired /
   ]
 ]
@@ -1379,23 +1378,23 @@ MessageId = bstr .size 32
 84                                      # array(4)
    82                                   # array(2)
       58 20                             # bytes(32)
-         d3c14744d1791d02548232c23d35efa9
-         7668174ba385af066011e43bd7e51501
+         017ce54837404c3696e0c747b985cb17
+         2716d0ed0a3d249ca63ace7d82a096f4
       02                                # unsigned(2)
    82                                   # array(2)
       58 20                             # bytes(32)
-         e701beee59f9376282f39092e1041b2a
-         c2e3aad1776570c1a28de244979c71ed
+         015354973c2b65ca937bf1e035ae53a5
+         ab80e947afa43d46920d4202e5cc0b27
       02                                # unsigned(2)
    82                                   # array(2)
       58 20                             # bytes(32)
-         6b50bfdd71edc83554ae21380080f4a3
-         ba77985da34528a515fac3c38e4998b8
+         018d825adf9f6be00dcafc5704c4102f
+         5022e74219d0b603e4ba7622654042af
       00                                # unsigned(0)
    82                                   # array(2)
       58 20                             # bytes(32)
-         5c95a4dfddab84348bcc265a479299fb
-         d3a2eecfa3d490985da5113e5480c7f1
+         01e59db8173939facc2c8a4a0f0ae8d0
+         c7a11a81239626630c9464a8d6717a03
       03                                # unsigned(3)
 </pre><a href="#section-5-5" class="pilcrow">¶</a>
 </div>
@@ -1460,10 +1459,10 @@ Encoding considerations:
    This message type should be encoded as binary data
 
 Security considerations:
-   See Section A of RFC XXXX
+   See Section 6 of RFC XXXX
 
 Interoperability considerations:
-   See Section Y.Z of RFC XXXX
+   See Section 3 of RFC XXXX
 
 Published specification: RFC XXXX
 
@@ -1500,11 +1499,11 @@ Person &amp; email address to contact for further information:
 <dl class="references">
 <dt id="I-D.ietf-mimi-arch">[I-D.ietf-mimi-arch]</dt>
         <dd>
-<span class="refAuthor">Barnes, R.</span>, <span class="refTitle">"An Architecture for More Instant Messaging Interoperability (MIMI)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-mimi-arch-01</span>, <time datetime="2024-11-21" class="refDate">21 November 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-mimi-arch-01">https://datatracker.ietf.org/doc/html/draft-ietf-mimi-arch-01</a>&gt;</span>. </dd>
+<span class="refAuthor">Barnes, R.</span>, <span class="refTitle">"An Architecture for More Instant Messaging Interoperability (MIMI)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-mimi-arch-02</span>, <time datetime="2025-10-20" class="refDate">20 October 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-mimi-arch-02">https://datatracker.ietf.org/doc/html/draft-ietf-mimi-arch-02</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.ietf-mimi-content">[I-D.ietf-mimi-content]</dt>
         <dd>
-<span class="refAuthor">Mahy, R.</span>, <span class="refTitle">"More Instant Messaging Interoperability (MIMI) message content"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-mimi-content-06</span>, <time datetime="2025-02-28" class="refDate">28 February 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-mimi-content-06">https://datatracker.ietf.org/doc/html/draft-ietf-mimi-content-06</a>&gt;</span>. </dd>
+<span class="refAuthor">Mahy, R.</span>, <span class="refTitle">"More Instant Messaging Interoperability (MIMI) message content"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-mimi-content-07</span>, <time datetime="2025-07-07" class="refDate">7 July 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-mimi-content-07">https://datatracker.ietf.org/doc/html/draft-ietf-mimi-content-07</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
         <dd>
