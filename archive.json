@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-11-06T01:55:01.873394+00:00",
+  "timestamp": "2025-11-09T01:57:50.718686+00:00",
   "repo": "rohanmahy/mimi-message-status",
   "labels": [
     {
@@ -50,5 +50,32 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOPGyyEM6x21I0",
+      "title": "Update message-status example to use correct message IDs from mimi-content",
+      "url": "https://github.com/rohanmahy/mimi-message-status/pull/1",
+      "state": "OPEN",
+      "author": "rohanmahy",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "mimi-content message IDs change in PR#70. use the same message IDs in the examples.",
+      "createdAt": "2025-11-06T09:54:03Z",
+      "updatedAt": "2025-11-06T10:16:55Z",
+      "baseRepository": "rohanmahy/mimi-message-status",
+      "baseRefName": "main",
+      "baseRefOid": "1230eb98aa5c06b89241e3a9e1d0e2ddffd6e263",
+      "headRepository": "rohanmahy/mimi-message-status",
+      "headRefName": "new-msgids",
+      "headRefOid": "fb5f01dc1df6d66604647ec34f3e2250c40e8b93",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
