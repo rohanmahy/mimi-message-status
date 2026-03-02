@@ -3,9 +3,9 @@
 
 
 More Instant Messaging Interoperability                          R. Mahy
-Internet-Draft                                               4 July 2025
+Internet-Draft                                              2 March 2026
 Intended status: Informational                                          
-Expires: 5 January 2026
+Expires: 3 September 2026
 
 
 A Message Status format for the More Instant Messaging Interoperability
@@ -52,11 +52,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 January 2026.
+   This Internet-Draft will expire on 3 September 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -220,26 +220,26 @@ Table of Contents
    [
      [
        /  Original message     /
-       h'01b0084467273cc43d6f0ebeac13eb84
-         229c4fffe8f6c3594c905f47779e5a79',
+       h'017ce54837404c3696e0c747b985cb17
+         2716d0ed0a3d249ca63ace7d82a096f4',
        2    / status = read    /
      ],
      [
        /  Reply message        /
-       h'01a419aef4e16d43cfc06c28235ecfbe
-         9faebc740d0148e7ca20b22150930836',
+       h'015354973c2b65ca937bf1e035ae53a5
+         ab80e947afa43d46920d4202e5cc0b27',
        2    / status = read    /
      ],
      [
        /  Mention message      /
-       h'01cbc26869928fd13edf55ace00f9976
-         8ca4e62ad17fede45520eaca58f69d02',
+       h'018d825adf9f6be00dcafc5704c4102f
+         5022e74219d0b603e4ba7622654042af',
        0    / status = unread  /
      ],
      [
        /  Expiring message     /
-       h'0106308e2c03346eba95b24abdfa9fe6
-         43aa247debfb7192feae647155316920',
+       h'01e59db8173939facc2c8a4a0f0ae8d0
+         c7a11a81239626630c9464a8d6717a03',
        3    / status = expired /
      ]
    ]
@@ -251,23 +251,23 @@ Table of Contents
    84                                      # array(4)
       82                                   # array(2)
          58 20                             # bytes(32)
-            d3c14744d1791d02548232c23d35efa9
-            7668174ba385af066011e43bd7e51501
+            017ce54837404c3696e0c747b985cb17
+            2716d0ed0a3d249ca63ace7d82a096f4
          02                                # unsigned(2)
       82                                   # array(2)
          58 20                             # bytes(32)
-            e701beee59f9376282f39092e1041b2a
-            c2e3aad1776570c1a28de244979c71ed
+            015354973c2b65ca937bf1e035ae53a5
+            ab80e947afa43d46920d4202e5cc0b27
          02                                # unsigned(2)
       82                                   # array(2)
          58 20                             # bytes(32)
-            6b50bfdd71edc83554ae21380080f4a3
-            ba77985da34528a515fac3c38e4998b8
+            018d825adf9f6be00dcafc5704c4102f
+            5022e74219d0b603e4ba7622654042af
          00                                # unsigned(0)
       82                                   # array(2)
          58 20                             # bytes(32)
-            5c95a4dfddab84348bcc265a479299fb
-            d3a2eecfa3d490985da5113e5480c7f1
+            01e59db8173939facc2c8a4a0f0ae8d0
+            c7a11a81239626630c9464a8d6717a03
          03                                # unsigned(3)
 
 6.  Security Considerations
@@ -319,10 +319,10 @@ Table of Contents
       This message type should be encoded as binary data
 
    Security considerations:
-      See Section A of RFC XXXX
+      See Section 6 of RFC XXXX
 
    Interoperability considerations:
-      See Section Y.Z of RFC XXXX
+      See Section 3 of RFC XXXX
 
    Published specification: RFC XXXX
 
@@ -348,16 +348,16 @@ Table of Contents
    [I-D.ietf-mimi-arch]
               Barnes, R., "An Architecture for More Instant Messaging
               Interoperability (MIMI)", Work in Progress, Internet-
-              Draft, draft-ietf-mimi-arch-01, 21 November 2024,
+              Draft, draft-ietf-mimi-arch-02, 20 October 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-mimi-
-              arch-01>.
+              arch-02>.
 
    [I-D.ietf-mimi-content]
               Mahy, R., "More Instant Messaging Interoperability (MIMI)
               message content", Work in Progress, Internet-Draft, draft-
-              ietf-mimi-content-06, 28 February 2025,
+              ietf-mimi-content-07, 7 July 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-mimi-
-              content-06>.
+              content-07>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
