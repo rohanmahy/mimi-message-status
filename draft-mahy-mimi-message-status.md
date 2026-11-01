@@ -166,7 +166,8 @@ A CBOR pretty printed hexadecimal version is shown below:
 
 Delivery and Read Receipts can provide useful information inside a group,
 or they can reveal sensitive private information. In many IM systems
-there are per-group policies for read receipts (and/or delivery notifications):
+there are per-group policies (see {{Section 6.1 of ?I-D.ietf-mimi-room-policy}})
+for read receipts (and/or delivery notifications):
 
 * they are required
 * they are permitted, but optional
